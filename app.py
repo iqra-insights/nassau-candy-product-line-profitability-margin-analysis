@@ -71,7 +71,7 @@ CUSTOM_CSS = f"""
     html, body, [class*="css"] {{ font-family: 'Source Sans Pro', 'Segoe UI', Calibri, Arial, sans-serif; }}
     h1, h2, h3, .hero-title, .section-title, .page-head-title {{ font-family: 'Merriweather', Georgia, serif; }}
  
-    .stApp {{ background-color: {PAGE_BG}; }}
+    .stApp {{ background-color: {PAGE_BG}; }} [data-testid="stAppViewContainer"] {{ background-color: {PAGE_BG} !important; }}
     /* The sidebar is now permanently open — no collapse/expand toggle at
        all. A collapse button is a one-way trap in some Streamlit versions
        (the browser remembers "collapsed" and won't reliably reopen it),
@@ -94,11 +94,11 @@ CUSTOM_CSS = f"""
     }}
     section[data-testid="stSidebar"][aria-expanded="false"] {{ transform: none !important; }}
     .block-container {{ padding-top: 3.25rem !important; padding-bottom: 2.5rem !important; max-width: 1540px !important; }}
-    [data-testid="stAppViewContainer"] > .main {{ background: {PAGE_BG}; }}
+    [data-testid="stAppViewContainer"] > .main {{ background: {PAGE_BG} !important; }}
     .main .block-container {{ margin-left: auto; margin-right: auto; }}
  
     /* ---- sidebar / filter panel ---- */
-    section[data-testid="stSidebar"] {{ background-color: {SIDEBAR_BG}; border-right: 1px solid {BORDER}; min-width: 290px !important; max-width: 290px !important; }}
+    section[data-testid="stSidebar"] {{ background-color: {SIDEBAR_BG} !important; border-right: 1px solid {BORDER}; min-width: 290px !important; max-width: 290px !important; }}
     section[data-testid="stSidebar"] > div {{ padding: 1.15rem 1.05rem 1.5rem 1.05rem !important; }}
     /* Streamlit reserves extra top space inside the sidebar for its own
        collapse-button row, even with that button hidden. Zero it out on
