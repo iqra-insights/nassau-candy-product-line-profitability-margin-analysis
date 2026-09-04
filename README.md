@@ -84,8 +84,10 @@ the margin-risk threshold recalculates recommendations in real time.
 ## 🖼️ Dashboard Preview
 
 <p align="center">
-  <a href="YOUR_STREAMLIT_APP_URL"><img src="assets/dashboard_preview.png" alt="Executive Overview" width="820"></a>
-  <br><i>Executive Overview — click to open the live app</i>
+  <a href="https://candy-profit-dashboard.streamlit.app/">
+    <img src="assets/dashboard_preview.png" alt="Executive Overview" width="820">
+  </a>
+  <br><i>Executive Overview — click to open the live dashboard</i>
 </p>
 
 | Product Profitability | Division Performance |
