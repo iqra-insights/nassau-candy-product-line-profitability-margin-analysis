@@ -1,0 +1,25 @@
+Field,Description,Type
+Row ID,Unique row identifier,Identifier
+Order ID,Unique order identifier,Identifier
+Order Date,Date the order was placed,Date
+Ship Date,Date the order was shipped,Date
+Ship Mode,Shipping method,Category
+Customer ID,Unique customer identifier,Identifier
+Country/Region,Customer country or region,Geography
+City,Customer city,Geography
+State/Province,Customer state/province,Geography
+Postal Code,Customer postal/ZIP code,Geography
+Division,Product division,Category
+Region,Customer region,Geography
+Product ID,Unique product identifier,Identifier
+Product Name,Product name,Category
+Sales,Total sales value,Numeric
+Units,Units sold,Numeric
+Gross Profit,Sales minus Cost,Numeric
+Cost,Manufacturing/product cost,Numeric
+Gross Margin (%),Gross Profit ÷ Sales × 100,Derived KPI
+Profit per Unit,Gross Profit ÷ Units,Derived KPI
+Revenue Contribution (%),Product Sales ÷ Total Sales × 100,Derived KPI
+Profit Contribution (%),Product Gross Profit ÷ Total Gross Profit × 100,Derived KPI
+Factory,Factory mapped from product correlation,Derived
+Latitude / Longitude,Factory coordinates,Derived
