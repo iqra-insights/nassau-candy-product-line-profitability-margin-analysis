@@ -14,7 +14,7 @@
 > An interactive executive analytics application that turns 10,194 raw transaction records into actionable profitability intelligence — which products, divisions, and factories actually make money, not just which ones sell.
 
 <p>
-  <a href="YOUR_STREAMLIT_APP_URL"><b>🔴 Live Dashboard</b></a> &nbsp;•&nbsp;
+  <a href="https://candy-profit-dashboard.streamlit.app/"><b>🔴 Live Dashboard</b></a> &nbsp;•&nbsp;
   <a href="YOUR_YOUTUBE_URL"><b>🎥 Demo Video</b></a> &nbsp;•&nbsp;
   <a href="reports/Research_Paper_Nassau_Candy.docx"><b>📄 Research Paper</b></a> &nbsp;•&nbsp;
   <a href="reports/Executive_Summary_Nassau_Candy.pdf"><b>📋 Executive Summary</b></a> &nbsp;•&nbsp;
@@ -22,7 +22,7 @@
   <a href="notebooks/Nassau_Candy_Analysis.ipynb"><b>📊 Notebook</b></a>
 </p>
 
-> ⚠️ **Before publishing:** replace every `YOUR_..._URL` placeholder with your real links, and every `assets/*.png` with a real screenshot. Search this file for `YOUR_` to find every remaining spot.
+> ⚠️ **Before publishing:** Streamlit and GitHub links below are filled in. Still pending — record the demo video and paste its YouTube link everywhere `YOUR_YOUTUBE_URL` appears (3 spots — use Find & Replace), and rename/add the `assets/*.png` files (see separate instructions).
 
 ---
 
@@ -38,6 +38,7 @@
 - [Analytical Methodology](#-analytical-methodology)
 - [Tech Stack](#️-tech-stack)
 - [Run Locally](#️-run-locally)
+- [Pushing Updates to GitHub](#-pushing-updates-to-github)
 - [Deployment](#️-deployment)
 - [Project Structure](#-project-structure)
 - [Business Recommendations](#-business-recommendations)
@@ -84,10 +85,8 @@ the margin-risk threshold recalculates recommendations in real time.
 ## 🖼️ Dashboard Preview
 
 <p align="center">
-  <a href="https://candy-profit-dashboard.streamlit.app/">
-    <img src="assets/dashboard_preview.png" alt="Executive Overview" width="820">
-  </a>
-  <br><i>Executive Overview — click to open the live dashboard</i>
+  <a href="https://candy-profit-dashboard.streamlit.app/"><img src="assets/dashboard_preview.png" alt="Executive Overview" width="820"></a>
+  <br><i>Executive Overview — click to open the live app</i>
 </p>
 
 | Product Profitability | Division Performance |
@@ -101,9 +100,6 @@ the margin-risk threshold recalculates recommendations in real time.
 | Factory Intelligence | Insights & Recommendations |
 |:---:|:---:|
 | ![Factory Intelligence](assets/factory_intelligence.png) | ![Insights](assets/insights_recommendations.png) |
-
-> 📸 Screenshot each of the 7 dashboard pages from your **live** app and save them into
-> `assets/` using the exact filenames above.
 
 ---
 
@@ -194,43 +190,82 @@ Full detail, code, and reasoning are in the [Jupyter notebook](notebooks/Nassau_
 
 ## ▶️ Run Locally
 
+**First time setup** — clone the repo and install dependencies:
+
 ```bash
-git clone https://github.com/<your-username>/Nassau_Candy_Product_Profitability_Analysis.git
-cd Nassau_Candy_Product_Profitability_Analysis
+git clone https://github.com/iqra-insights/nassau-candy-product-line-profitability-margin-analysis.git
+cd nassau-candy-product-line-profitability-margin-analysis
 pip install -r requirements.txt
+```
+
+**Every time you want to run the dashboard:**
+
+```bash
 streamlit run app.py
 ```
 
-The application opens at `http://localhost:8501`.
+The application opens at `http://localhost:8501`. Stop it anytime with `Ctrl+C` in the terminal.
 
 > **Windows users:** if you see `Error: Invalid value: File does not exist: app.py`, it means
 > your terminal is one folder above `app.py`. Run `dir` to check what's in your current folder —
 > if you see another folder name instead of `app.py`, `cd` into it first, then run
 > `streamlit run app.py` again.
 
+## 📤 Pushing Updates to GitHub
+
+Whenever you change any file locally (`app.py`, `README.md`, a screenshot, etc.) and want it
+live on GitHub (and auto-redeployed on Streamlit Cloud), run these three commands from inside
+the project folder:
+
+```bash
+git add .
+git commit -m "Describe what you changed here"
+git push
+```
+
+- `git add .` stages every changed file in the folder
+- `git commit -m "..."` saves a checkpoint with a short message describing the change
+- `git push` uploads that checkpoint to GitHub
+
+If this is a **brand-new** repo that has never been pushed before, use this one-time sequence instead:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/iqra-insights/nassau-candy-product-line-profitability-margin-analysis.git
+git push -u origin main
+```
+
+Streamlit Community Cloud watches the GitHub repo automatically — once `git push` finishes, the
+live dashboard redeploys on its own within 1–2 minutes. No manual redeploy step is needed.
+
 ## ☁️ Deployment
 
 Deployed on **Streamlit Community Cloud**.
 
-1. Push the contents of `Nassau_Candy_Product_Profitability_Analysis/` to a **public** GitHub
-   repository — this folder itself must be the repo root, with `app.py` directly inside it.
+1. Push the contents of this folder to a **public** GitHub repository — this folder itself must
+   be the repo root, with `app.py` directly inside it.
 2. Go to [streamlit.io/cloud](https://streamlit.io/cloud) → **New app**.
 3. Select the repository and branch, and set the main file to `app.py`.
 4. Click **Deploy** — done in about 2 minutes.
 5. Test the public URL in an incognito/private browser window.
-6. Replace every `YOUR_STREAMLIT_APP_URL` in this README with the real URL.
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-Nassau_Candy_Product_Profitability_Analysis/
+nassau-candy-product-line-profitability-margin-analysis/
 ├── README.md
 ├── app.py
 ├── requirements.txt
 ├── data_dictionary.csv
 ├── .gitignore
+├── LICENSE
+├── .streamlit/
+│   └── config.toml
 ├── data/
 │   ├── nassau_candy_cleaned.csv
 │   ├── product_profitability_summary.csv
@@ -251,11 +286,6 @@ Nassau_Candy_Product_Profitability_Analysis/
     ├── factory_intelligence.png
     └── insights_recommendations.png
 ```
-
-> **Note:** the `data/` summary CSVs (`product_profitability_summary.csv`,
-> `division_performance_summary.csv`, `factory_performance_summary.csv`) belong only in `data/`.
-> If they've also been copied into `notebooks/`, delete the duplicates there — `notebooks/`
-> should contain only `Nassau_Candy_Analysis.ipynb`.
 
 ## 💡 Business Recommendations
 
@@ -285,7 +315,7 @@ Data Science & Analytics · Python · SQL · Power BI · Tableau
 
 <p>
   <a href="https://linkedin.com/in/siddiquiiqra"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="YOUR_GITHUB_PROFILE_URL"><img src="https://img.shields.io/badge/GitHub-Follow-181717?logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://github.com/iqra-insights"><img src="https://img.shields.io/badge/GitHub-Follow-181717?logo=github&logoColor=white" alt="GitHub"></a>
 </p>
 
 ---
