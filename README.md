@@ -15,14 +15,16 @@
 
 <p>
   <a href="https://candy-profit-dashboard.streamlit.app/"><b>🔴 Live Dashboard</b></a> &nbsp;•&nbsp;
-  <a href="YOUR_YOUTUBE_URL"><b>🎥 Demo Video</b></a> &nbsp;•&nbsp;
+  <a href="#-demo-video"><b>🎥 Demo Video</b></a> &nbsp;•&nbsp;
   <a href="reports/Research_Paper_Nassau_Candy.docx"><b>📄 Research Paper</b></a> &nbsp;•&nbsp;
   <a href="reports/Executive_Summary_Nassau_Candy.pdf"><b>📋 Executive Summary</b></a> &nbsp;•&nbsp;
   <a href="reports/Nassau_Candy_Presentation.pptx"><b>🖥️ Presentation</b></a> &nbsp;•&nbsp;
   <a href="notebooks/Nassau_Candy_Analysis.ipynb"><b>📊 Notebook</b></a>
 </p>
 
-> ⚠️ **Before publishing:** Streamlit and GitHub links below are filled in. Still pending — record the demo video and paste its YouTube link everywhere `YOUR_YOUTUBE_URL` appears (3 spots — use Find & Replace), and rename/add the `assets/*.png` files (see separate instructions).
+> ⚠️ **One step left:** drag-and-drop your compressed demo video into this file's GitHub edit
+> box, copy the `https://github.com/user-attachments/assets/...` link it gives you, and paste it
+> over **`PASTE_VIDEO_URL_HERE`** below (appears twice, in the *Demo Video* section only).
 
 ---
 
@@ -72,11 +74,11 @@ transaction records.
 ## 🎥 Demo Video
 
 <p align="center">
-  <a href="YOUR_YOUTUBE_URL">
+  <a href="PASTE_VIDEO_URL_HERE">
     <img src="assets/dashboard_preview.png" alt="Watch the demo video" width="720">
   </a>
   <br>
-  <a href="YOUR_YOUTUBE_URL"><b>▶️ Watch the 90-second walkthrough on YouTube</b></a>
+  <a href="PASTE_VIDEO_URL_HERE"><b>▶️ Watch the walkthrough (2 min 25 sec)</b></a>
 </p>
 
 A quick tour of the executive KPIs, live filtering, the profitability quadrant analysis, and how
@@ -243,7 +245,7 @@ live dashboard redeploys on its own within 1–2 minutes. No manual redeploy ste
 
 ## ☁️ Deployment
 
-Deployed on **Streamlit Community Cloud**.
+Deployed on **Streamlit Community Cloud**: [candy-profit-dashboard.streamlit.app](https://candy-profit-dashboard.streamlit.app/)
 
 1. Push the contents of this folder to a **public** GitHub repository — this folder itself must
    be the repo root, with `app.py` directly inside it.
