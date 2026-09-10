@@ -296,7 +296,7 @@ nassau-candy-product-line-profitability-margin-analysis/
 - Shift promotional rules from sales-volume-based to margin-based.
 - Track monthly margin volatility to catch pricing, cost, or product-mix instability early.
 
-## 📦 Project Deliverables
+## 📦 Project Deliverables 
 
 - ✅ Interactive Streamlit dashboard
 - ✅ Exploratory and statistical analysis notebook
