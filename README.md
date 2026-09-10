@@ -78,7 +78,9 @@ transaction records.
     <img src="assets/dashboard_preview.png" alt="Watch the demo video" width="720">
   </a>
   <br>
-  <a href="Nassau_Candy_Demo_Walkthrough_compressed.mp4"><b>▶️ Watch the walkthrough (2 min 25 sec)</b></a>
+  <a href="Nassau_Candy_Demo_Walkthrough_compressed.mp4">
+    <b>▶️ Watch the walkthrough (2 min 25 sec)</b>
+  </a>
 </p>
 
 A quick tour of the executive KPIs, live filtering, the profitability quadrant analysis, and how
