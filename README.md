@@ -22,10 +22,6 @@
   <a href="notebooks/Nassau_Candy_Analysis.ipynb"><b>📊 Notebook</b></a>
 </p>
 
-> ⚠️ **One step left:** drag-and-drop your compressed demo video into this file's GitHub edit
-> box, copy the `https://github.com/user-attachments/assets/...` link it gives you, and paste it
-> over **`PASTE_VIDEO_URL_HERE`** below (appears twice, in the *Demo Video* section only).
-
 ---
 
 ## 📋 Table of Contents
