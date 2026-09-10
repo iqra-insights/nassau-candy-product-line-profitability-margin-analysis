@@ -74,11 +74,11 @@ transaction records.
 ## 🎥 Demo Video
 
 <p align="center">
-  <a href="PASTE_VIDEO_URL_HERE">
+  <a href="https://github.com/user-attachments/assets/b7d217e2-1c7b-45de-8ca9-6da048870c25">
     <img src="assets/dashboard_preview.png" alt="Watch the demo video" width="720">
   </a>
   <br>
-  <a href="Nassau_Candy_Demo_Walkthrough_compressed.mp4">
+  <a href="https://github.com/user-attachments/assets/b7d217e2-1c7b-45de-8ca9-6da048870c25">
     <b>▶️ Watch the walkthrough (2 min 25 sec)</b>
   </a>
 </p>
