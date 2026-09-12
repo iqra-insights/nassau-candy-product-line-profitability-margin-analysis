@@ -15,7 +15,7 @@
 
 <p>
   <a href="https://candy-profit-dashboard.streamlit.app/"><b>🔴 Live Dashboard</b></a> &nbsp;•&nbsp;
-  <a href="#-demo-video"><b>🎥 Demo Video</b></a> &nbsp;•&nbsp;
+  <a href="https://drive.google.com/file/d/1UpBg8CSTAu2D92WnWsLklbqhWR-61Z6T/view?usp=sharing"><b>🎥 Demo Video</b></a> &nbsp;•&nbsp;
   <a href="reports/Research_Paper_Nassau_Candy.docx"><b>📄 Research Paper</b></a> &nbsp;•&nbsp;
   <a href="reports/Executive_Summary_Nassau_Candy.pdf"><b>📋 Executive Summary</b></a> &nbsp;•&nbsp;
   <a href="reports/Nassau_Candy_Presentation.pptx"><b>🖥️ Presentation</b></a> &nbsp;•&nbsp;
@@ -70,13 +70,11 @@ transaction records.
 ## 🎥 Demo Video
 
 <p align="center">
-  <a href="https://github.com/user-attachments/assets/b7d217e2-1c7b-45de-8ca9-6da048870c25">
+  <a href="https://drive.google.com/file/d/1UpBg8CSTAu2D92WnWsLklbqhWR-61Z6T/view?usp=sharing">
     <img src="assets/dashboard_preview.png" alt="Watch the demo video" width="720">
   </a>
   <br>
-  <a href="https://github.com/user-attachments/assets/b7d217e2-1c7b-45de-8ca9-6da048870c25">
-    <b>▶️ Watch the walkthrough (2 min 25 sec)</b>
-  </a>
+  <a href="https://drive.google.com/file/d/1UpBg8CSTAu2D92WnWsLklbqhWR-61Z6T/view?usp=sharing"><b>▶️ Watch the walkthrough (2 min 25 sec)</b></a>
 </p>
 
 A quick tour of the executive KPIs, live filtering, the profitability quadrant analysis, and how
@@ -296,7 +294,7 @@ nassau-candy-product-line-profitability-margin-analysis/
 - Shift promotional rules from sales-volume-based to margin-based.
 - Track monthly margin volatility to catch pricing, cost, or product-mix instability early.
 
-## 📦 Project Deliverables 
+## 📦 Project Deliverables
 
 - ✅ Interactive Streamlit dashboard
 - ✅ Exploratory and statistical analysis notebook
